@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         // Отправка данных в Google таблицу
-        fetch('https://script.google.com/macros/s/AKfycby5XcOLQOrRkeoXy3trSotkLhHQvu4VLmS5RTkJA0R7g7F-Ym3gH7rtKVRKHgaOwqC_1w/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbwaLNVv_Zxz7r0NKB-MTkkuivUPDsWoK1uTAVfOiWi-aCRbPxTvBQbzqOatIDeI_0P1xw/exec', {
             method: 'POST',
             mode: 'cors',
             headers: {
