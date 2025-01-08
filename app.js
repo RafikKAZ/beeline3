@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (city === 'Астана') {
             map.setCenter([51.169392, 71.449074]);
         }
-        // Добавить координаты для других городов
+        // Добавить координаты для других городов при необходимости
     });
 
     submitButton.addEventListener('click', function () {
