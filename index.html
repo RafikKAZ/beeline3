@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подключение к Интернет Дома от Beeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=29954df2-70a5-4786-a0ad-417a1b83ef95&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Подключение к Интернет Дома от Beeline</h1>
+        <label for="city">Город:</label>
+        <select id="city" required>
+            <option value="">Выберите город</option>
+            <option value="Астана">Астана</option>
+            <!-- Другие города -->
+        </select>
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" pattern="[А-Яа-яЁё\s]+" required>
+        <label for="phone">Контактный номер:</label>
+        <input type="tel" id="phone" pattern="\d+" required>
+        <label for="address">Адрес ЖК:</label>
+        <input type="text" id="address" readonly required>
+        <div id="map" style="width: 100%; height: 300px;"></div>
+        <button id="submit">Отправить заявку</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
