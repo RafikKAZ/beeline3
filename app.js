@@ -66,8 +66,11 @@ document.addEventListener('DOMContentLoaded', function() {
             date: new Date().toLocaleString()
         };
 
-        // Отправка данных в Google таблицу
-        fetch('https://script.google.com/macros/s/AKfycbwaLNVv_Zxz7r0NKB-MTkkuivUPDsWoK1uTAVfOiWi-aCRbPxTvBQbzqOatIDeI_0P1xw/exec', {
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'https://script.google.com/macros/s/AKfycbwj0dGvHuhBITY9ooQZC93LqKoslEzz5DcafROn4IKNKw9UjkTsSvtqXoYbFOHbqjLb_g/exec';
+
+        // Отправка данных в Google таблицу через прокси-сервер
+        fetch(proxyUrl + targetUrl, {
             method: 'POST',
             mode: 'cors',
             headers: {
